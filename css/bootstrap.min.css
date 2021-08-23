@@ -5326,8 +5326,8 @@ textarea.form-control-lg
 }
 
 /* li - checkbox */
-ul .li-img:before {
-	position: absolute;/**/
+ul .li-pointer:before {
+	position: absolute; /**/
 	content: '';
 	top: 50%;
 	left: 0;
@@ -5336,6 +5336,7 @@ ul .li-img:before {
 	background: url("../img/checkbox48.png") no-repeat 0px 0px;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
+}
 
 .list-group-item:first-child
 {
