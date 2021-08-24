@@ -5325,6 +5325,17 @@ textarea.form-control-lg
 	text-decoration: none;
 }
 
+.list-group-num
+{
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	color: #212529;
+	/*	display: block;*/
+	padding: .5rem;
+	position: relative;
+	text-decoration: none;
+}
+
 /* li - checkbox */
 ul .li-pointer:before {
 	position: absolute; /**/
