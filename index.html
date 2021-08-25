@@ -7,9 +7,15 @@
     <meta charset="UTF-8">
     <title>Title</title>
 <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/bootstrap-utilities.css" rel="stylesheet">
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link href="css/custom.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/03ab4f6e6d.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -35,17 +41,15 @@
 <!-- header -->
 <div class="container" id="header">
     <header class="test-custom d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-        </a>
+        <span class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <i class="fas fa-camera"></i>
+        </span>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="#about-me" class="nav-link px-2 link-dark">Обо мне</a></li>
-            <li><a href="#icon-grid" class="nav-link px-2 link-secondary">Преимущества</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Этапы работы</a></li>
+            <li><a href="#advantage" class="nav-link px-2 link-secondary">Преимущества</a></li>
+            <li><a href="#stages" class="nav-link px-2 link-dark">Этапы работы</a></li>
             <li><a href="#pricing" class="nav-link px-2 link-dark">Тарифы</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Портфолио</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Отзывы</a></li>
         </ul>
 
         <div class="col-md-3 text-end">
@@ -64,7 +68,7 @@
             <img src="img/avatar11.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
-            <h6 class="display-5 fw-bold lh-1 mb-6">Настройка, ведение, аналитика Яндекс Директ и Google Ads от 5000 руб.</h6>
+            <h6 class="display-5 fw-bold lh-1 mb-6"><i class="fas fa-camera"></i> Настройка, ведение, аналитика Яндекс Директ и Google Ads от 5000 руб.</h6>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Заказать рекламу</button>
             </div>
@@ -74,8 +78,8 @@
 </div>
 
 <!-- features -->
-<div class="container px-4 py-5" id="icon-grid">
-    <h2 class="pb-2 border-bottom">Почему работа со мной выгодна вам</h2>
+<div class="container px-4 py-5" id="advantage">
+    <h2 class="pb-2 border-bottom">Почему работа со мной выгодна вам <i class="fas fa-camera"></i></h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
         <div class="col d-flex align-items-start">
             <div>
@@ -116,9 +120,21 @@
     </div>
 </div>
 
-<!-- grid -->
+<!-- doing -->
 <div class="container">
     <h2 class="mt-4 border-bottom text-center">Что я делаю</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-5">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+    </div>
+    </div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-5">
         <div class="col d-flex align-items-start text-center border-block rounded-10 col-md-35">
             <div>
@@ -413,6 +429,75 @@
         </ol>
 
     </main>
+</div>
+
+<!-- stages -->
+<div class="container" id="stages">
+    <h2 class="mt-4 border-bottom text-center">Этапы совместной работы</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-5">
+        <div class="badge-str col-md-15">
+            <img src="img/str1.png">
+        </div>
+        <div class="col d-flex align-items-start text-center border-block rounded-10 col-md-35">
+            <div>
+                <h4 class="fw-500">6. Сопровождение</h4>
+                <p>Ведение проекта на платной основе (по желанию клиента).</p>
+            </div>
+        </div>
+        <div class="badge-str col-md-15"></div>
+        <div class="col d-flex align-items-start text-center border-block rounded-10 col-md-35">
+            <div>
+                <h4 class="fw-500">1. Заявка</h4>
+                <p>Оставьте заявку на сайте или оставьте сообщение ВКонтакте или Telegram.
+                    Я свяжусь с вами в течение 30 минут.</p>
+            </div>
+        </div>
+        <div class="badge-str col-md-15">
+            <img src="img/str1.png">
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-5">
+        <div class="col d-flex align-items-start text-center border-block rounded-10 col-md-35">
+            <div>
+                <h4 class="fw-500">5. Оптимизация</h4>
+                <p>Ведение рекламы в рамках тарифного плана 7-14 дней, анализ первых клиентов.</p>
+            </div>
+        </div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class="col d-flex align-items-start text-center border-block rounded-10 col-md-35">
+            <div>
+                <h4 class="fw-500">2. Проект</h4>
+                <p>Обсудим проект, условия, объем работ. Заполните бриф.
+                    Оплата 50% перед началом работы.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-5">
+        <div class="badge-str col-md-15">
+            <img src="img/str1.png">
+        </div>
+        <div class="col d-flex align-items-start text-center border-block rounded-10 col-md-35">
+            <div>
+                <h4 class="fw-500">4. Запуск</h4>
+                <p>Передача рекламы клиенту, оплата второй половины 50%, запуск проекта.</p>
+            </div>
+        </div>
+        <div class="badge-str col-md-15">
+            <img src="img/str1.png">
+        </div>
+        <div class="col d-flex align-items-start text-center border-block rounded-10 col-md-35">
+            <div>
+                <h4 class="fw-500">3. Семантика</h4>
+                <p>Создание и согласование семантического ядра, текстов с клиентом.
+                    Настройка рекламных кампаний.</p>
+            </div>
+        </div>
+        <div class="badge-str col-md-15">
+            <img src="img/str1.png">
+        </div>
+    </div>
 </div>
 
 <!-- footer -->
