@@ -1116,6 +1116,11 @@ progress
 		flex: 0 0 auto;
 		width: 8.33333333%;
 	}
+	.col-md-15
+	{
+		flex: 0 0 auto;
+		width: 5%;
+	}
 	.col-md-2
 	{
 		flex: 0 0 auto;
@@ -1125,6 +1130,11 @@ progress
 	{
 		flex: 0 0 auto;
 		width: 25%;
+	}
+	.col-md-35
+	{
+		flex: 0 0 auto;
+		width: 30%;
 	}
 	.col-md-4
 	{
@@ -5336,26 +5346,6 @@ textarea.form-control-lg
 	text-decoration: none;
 }
 
-/* li - checkbox */
-ul .li-pointer:before {
-	position: absolute; /**/
-	content: '';
-	top: 50%;
-	left: 0;
-	width: 30px;
-	height: 30px;
-	background: url("../img/str1.png") no-repeat 0px 0px;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-/* top */
-#top {
-	position :fixed;
-	bottom :100px;
-	right :5px;
-}
-
 .list-group-item:first-child
 {
 	border-top-left-radius: inherit;
@@ -8071,6 +8061,10 @@ ul .li-pointer:before {
 {
 	font-weight: 400!important;
 }
+.fw-500
+{
+	font-weight: 500!important;
+}
 .fw-bold
 {
 	font-weight: 700!important;
@@ -8364,6 +8358,14 @@ ul .li-pointer:before {
 .rounded-3
 {
 	border-radius: .3rem!important;
+}
+.rounded-5
+{
+	border-radius: .5rem!important;
+}
+.rounded-10
+{
+	border-radius: .9rem!important;
 }
 .rounded-circle
 {
@@ -11727,5 +11729,37 @@ ul .li-pointer:before {
 	{
 		display: none!important;
 	}
+}
+
+/* MY STYLES */
+/* li - checkbox */
+ul .li-pointer:before {
+	position: absolute; /**/
+	content: '';
+	top: 50%;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	background: url("../img/str1.png") no-repeat 0px 0px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* top */
+#top {
+	position :fixed;
+	bottom :100px;
+	right :5px;
+}
+
+.border-block {
+	border: 1px solid #dee2e6;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.badge-str {
+	text-align: center;
+	height: inherit ;
+	vertical-align: middle;
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
