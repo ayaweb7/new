@@ -38,4 +38,9 @@ ul .li-pointer:before {
     height: inherit ;
     vertical-align: middle;
 }
+
+.row-cols-md-30 > * {
+    flex: 0 0 auto;
+    width: 30%;
+}
 /*# sourceMappingURL=bootstrap.min.css.map */
