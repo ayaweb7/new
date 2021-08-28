@@ -2,6 +2,9 @@
     border-bottom-color: lawngreen !important;
 }
 
+.test-custom-top {
+    border-top-color: lawngreen !important;
+}
 
 .bi {
     vertical-align: -.125em;
