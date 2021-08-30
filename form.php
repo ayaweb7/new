@@ -16,7 +16,7 @@
     <div class="form-wrapper">
 
         <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
-            <p class="contact-form__title">Оставьте заявку на расчет стоимости</p>
+            <p class="contact-form__title">Заказать услугу</p>
             <p class="contact-form__description"></p>
             <div class="contact-form__input-wrapper">
                 <input name="name" type="text" class="contact-form__input contact-form__input_name"
@@ -40,7 +40,7 @@
                 <textarea name="text" class="contact-form__input contact-form__text" placeholder="Введите ваше сообщение"></textarea>
                 <div class="contact-form__error contact-form__error_text"></div>
             </div>
-
+<!---->
             <div class="contact-form__input-wrapper">
                 <input class="contact-form__input contact-form__file" type="file" name="files[]">
                 <div class="contact-form__error contact-form__error_file"></div>
@@ -52,7 +52,7 @@
                 <div class="contact-form__error contact-form__error_agreement"></div>
             </div>
 
-            <button class="contact-form__button" type="submit"> Получить прайс </button>
+            <button class="contact-form__button" type="submit"> Отправить заявку </button>
         </form>
         
     </div>
@@ -66,7 +66,7 @@
 
     <script>
         $(function() {
-            $('.contact-form__input_tel').mask('+3(000)000-00-00');
+            $('.contact-form__input_tel').mask('+7(000)000-00-00');
         });
     </script>
 </body>

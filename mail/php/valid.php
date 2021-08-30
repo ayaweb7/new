@@ -61,7 +61,7 @@
 
     
      if((empty($_POST['email']) && empty($_POST['tel'])) && (!EMAILISREQUIRED && !TELISREQUIRED)) {
-         $msgs['attantion'] = 'Заполните хотя бы одно контактное поле для связии с вами';
+         $msgs['attantion'] = 'Заполните хотя бы одно контактное поле для связи с вами';
      }
 
 	if ($msgs) {

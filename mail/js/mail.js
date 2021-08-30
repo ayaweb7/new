@@ -8,8 +8,8 @@
 		let inpEmailError = $(this).find('.contact-form__error_email');
 		let inpTelError = $(this).find('.contact-form__error_tel');
 		let inpTextError = $(this).find('.contact-form__error_text');
-		let inpAgreementError = $(this).find('.contact-form__error_agreement');
-		let inpFileError = $(this).find('.contact-form__error_file');
+		//let inpAgreementError = $(this).find('.contact-form__error_agreement');
+		//let inpFileError = $(this).find('.contact-form__error_file');
 
 		// Сохраняем в переменную див, в который будем выводить сообщение формы
 		let formDescription = $(this).find('.contact-form__description');
@@ -62,19 +62,25 @@
 				}
 
 				if (respond.attantion) {
-					formDescription.text(respond.attantion).css('color', '#e84a66').fadeIn();
+					formDescription.text(respond.attantion).css('color', '#e84a66').fadeIn(); //
 				} else {
 					formDescription.text('');
 				}
 
+// Сообщение об успехе
+//				if (respond.success) {
+//					formDescription.text(respond.success).fadeIn();
+//					setTimeout(() => {
+//						formDescription.fadeOut("slow");
+//					}, 10000);
+//					setTimeout(() => {
+//						formDescription.text('');
+//					}, 5000);
+//				}
+
+// Переброс на страницу благодарности
 				if (respond.success) {
-					formDescription.text(respond.success).fadeIn();
-					setTimeout(() => {
-						formDescription.fadeOut("slow");
-					}, 4000);
-					setTimeout(() => {
-						formDescription.text('');
-					}, 5000);
+					window.location.replace("/thank-you-page.php?status=success"); 
 				}
 			},
 		});

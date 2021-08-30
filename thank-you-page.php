@@ -5,8 +5,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Страница благодарности формы обратной связи</title>
-	<link rel="stylesheet" href="./css/style.css">
-	<!-- <meta http-equiv="Refresh" content="4; URL=/"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<meta http-equiv="Refresh" content="4; URL=/"><!--  -->
 </head>
 
 <body>

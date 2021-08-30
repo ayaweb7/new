@@ -6,16 +6,16 @@
 	const MSGSNAMEERROR = "⚠ Поле обязательно для заполнения";
 
 	// Телефон
-	const TELISREQUIRED = true;
+	const TELISREQUIRED = false;
 	const MSGSTELERROR = "⚠ Поле обязательно для заполнения";
 
 	// Email
-	const EMAILISREQUIRED = true;
+	const EMAILISREQUIRED = false;
 	const MSGSEMAILERROR = "⚠ Поле обязательно для заполнения";
 	const MSGSEMAILINCORRECT = "⚠ Некорректный почтовый адрес";
 
 	// Текстовое поле
-	const TEXTISREQUIRED = false;
+	const TEXTISREQUIRED = true;
 	const MSGSTEXTERROR = "⚠ Поле обязательно для заполнения";
 
 	// Файл
@@ -23,13 +23,13 @@
 	const MSGSFILEERROR = "⚠ Забыли добавить файл";
 
 	// Соглашение
-	const AGGREMENTISREQUIRED = true;
+	const AGGREMENTISREQUIRED = false;
 	const MSGSAGGREMENTERROR = "⚠ Примите пользовательское соглашение"; 
 
 	// Сообщение об успешной отправке
 	const MSGSSUCCESS = "Сообщение успешно отправлено";
 
-	// *** SMTP *** //
+	// ***YANDEX - 'ssl://smtp.yandex.ru' SMTP *** GOOGLE - 'smtp.gmail.com' //
 
 		require_once($_SERVER['DOCUMENT_ROOT'] . '/mail/phpmailer/smtp.php');
 		const HOST = 'smtp.gmail.com';
@@ -43,7 +43,7 @@
 	const SENDER = 'ayaweb7@gmail.com';
 	
 	// Почта на которую будет приходить письмо
-	const CATCHER = 'ayaweb7@gmail.com';
+	const CATCHER = 'ayaweb7@yandex.ru';
 	
 	// Тема письма
 	const SUBJECT = 'Заявка с сайта';

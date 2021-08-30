@@ -41,7 +41,7 @@
     $mail->CharSet = CHARSET;
     $mail->isHTML(true);
 		$mail->Subject = SUBJECT;
-		$mail->Body = "$name $tel $email $text $agreement"; 
+		$mail->Body = "$name $tel $email $text"; // $agreement
 		if(!$mail->send()) {
     } else {
       echo json_encode($msgs);
