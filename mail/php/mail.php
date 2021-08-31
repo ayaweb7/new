@@ -26,15 +26,15 @@
 			$mail = new PHPMailer;
 		}
 
-		for ($ct = 0; $ct < count($_FILES['files']['tmp_name']); $ct++) {
-        $uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES['files']['name'][$ct]));
-        $filename = $_FILES['files']['name'][$ct];
-            if (move_uploaded_file($_FILES['files']['tmp_name'][$ct], $uploadfile)) {
-                $mail->addAttachment($uploadfile, $filename);
-            } else {
-                $msg .= 'failfile';
-            }
-    } 
+//		for ($ct = 0; $ct < count($_FILES['files']['tmp_name']); $ct++) {
+//        $uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES['files']['name'][$ct]));
+//        $filename = $_FILES['files']['name'][$ct];
+//            if (move_uploaded_file($_FILES['files']['tmp_name'][$ct], $uploadfile)) {
+//                $mail->addAttachment($uploadfile, $filename);
+//            } else {
+//               $msg .= 'failfile';
+//            }
+//    } 
 
 		$mail->setFrom(SENDER);
     $mail->addAddress(CATCHER);

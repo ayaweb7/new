@@ -1,6 +1,8 @@
 (function ($) {
 	$(".contact-form").submit(function (event) {
 		event.preventDefault();
+				
+		// Сохраняем в переменную form id текущей формы, на которой сработало событие submit
 		let form = $('#' + $(this).attr('id'))[0];
 
 		// Сохраняем в переменные дивы, в которые будем выводить текст ошибки
@@ -49,17 +51,17 @@
 					inpTextError.text('');
 				}
 				
-				if (respond.file) {
-					inpFileError.text(respond.file);
-				} else {
-					inpFileError.text('');
-				}
+//				if (respond.file) {
+//					inpFileError.text(respond.file);
+//				} else {
+//					inpFileError.text('');
+//				}
 
-				if (respond.agreement) {
-					inpAgreementError.text(respond.agreement);
-				} else {
-					inpAgreementError.text('');
-				}
+//				if (respond.agreement) {
+//					inpAgreementError.text(respond.agreement);
+//				} else {
+//					inpAgreementError.text('');
+//				}
 
 				if (respond.attantion) {
 					formDescription.text(respond.attantion).css('color', '#e84a66').fadeIn(); //

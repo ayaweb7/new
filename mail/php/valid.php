@@ -45,11 +45,11 @@
         }
     }
 
-    foreach ($_FILES["files"]["error"] as $key => $error) {
-        if (!$error == UPLOAD_ERR_OK  && FILEISREQUIRED) {
-             $msgs['file'] = MSGSFILEERROR;
-        }
-    }
+//    foreach ($_FILES["files"]["error"] as $key => $error) {
+//        if (!$error == UPLOAD_ERR_OK  && FILEISREQUIRED) {
+//             $msgs['file'] = MSGSFILEERROR;
+ //       }
+//    }
 
     if(empty($_POST['agreement']) && AGGREMENTISREQUIRED) {
         $msgs['agreement'] = MSGSAGGREMENTERROR;
